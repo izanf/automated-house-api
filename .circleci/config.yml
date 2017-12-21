@@ -40,5 +40,5 @@ jobs:
 
       - run:
           name: Deploy to Umbler
-          command: git push origin master
+          command: rm -rf .git && git init && git remote add origin https://naboo.deploy.umbler.com/6j571vye/automatedhouse-top.git && git add . && git commit -m "Deploy" && git push origin master
           # command: git remote add origin https://naboo.deploy.umbler.com/6j571vye/automatedhouse-top.git && git push origin master
