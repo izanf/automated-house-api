@@ -40,4 +40,4 @@ jobs:
 
       - run:
           name: Deploy to Umbler
-          command: git remote add umbler ssh://git@naboo.deploy.umbler.com:9922/6j571vye/automatedhouse-top.git && git push umbler master
+          command: git remote add origin ssh://git@naboo.deploy.umbler.com:9922/6j571vye/automatedhouse-top.git && git push origin master
