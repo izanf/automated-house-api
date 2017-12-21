@@ -1,0 +1,19 @@
+{
+  "name": "automated-house-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://naboo.deploy.umbler.com/6j571vye/myautomatedhouse-com.git"
+  },
+  "author": "Izanderson Florencio",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
+}
