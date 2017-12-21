@@ -18,7 +18,7 @@ const allEvents = [
     link: 'https://www.eventick.com.br/frontinvale2017'
   }
 ]
-app.get('/', () => console.log('You not have permissions to access this page.'))
+app.get('/', () => alert('You not have permissions to access this page.'))
 app.get('/allevents', (req, res) => res.json(allEvents))
 app.listen(port, () => {
   console.log(`Server running at http://localhost:${port}`)
