@@ -39,6 +39,10 @@ jobs:
             - "36:5e:58:17:19:b7:55:03:fd:a7:5f:bb:07:f4:1a:32"
 
       - run:
+          name: Define git user
+          command: git config --global user.email "izandersonf@gmail.com" && git config --global user.name "AutomatedHouse"
+
+      - run:
           name: Deploy to Umbler
           command: rm -rf .git && git init && git remote add origin https://naboo.deploy.umbler.com/6j571vye/automatedhouse-top.git && git add . && git commit -m "Deploy" && git push origin master
           # command: git remote add origin https://naboo.deploy.umbler.com/6j571vye/automatedhouse-top.git && git push origin master
