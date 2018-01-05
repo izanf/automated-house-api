@@ -3,7 +3,7 @@ const app = express()
 const port = 3000
 const allEvents = [
   {
-    name: 'QConSP',
+    name: 'QConSPSS',
     data: ['24/04/2017', '25/04/2017', '26/04/2017'],
     link: 'http://qconsp.com'
   },
@@ -18,7 +18,7 @@ const allEvents = [
     link: 'https://www.eventick.com.br/frontinvale2017'
   }
 ]
-app.get('/', () => console.log('You not have permissions to access this page.'))
+
 app.get('/allevents', (req, res) => res.json(allEvents))
 app.listen(port, () => {
   console.log(`Server running at http://localhost:${port}`)
